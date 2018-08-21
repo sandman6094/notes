@@ -1,0 +1,16 @@
+##安装
+
+经测试Debian9.5是可以使用Ubuntu的lightdm-webkit-greeter包，直接dpkg并apt install -f即可
+
+##配置
+
+在/etc/lightdm/lightdm.conf中需要修改的（仅修改[seats*]下的选项）：
+
+user-session=i3
+
+greeter-session=lightdm-webkit-greeter
+
+在/etc/lightdm/lightdm-webkit-greeter.conf中需要修改的：
+webkit-theme=Solar (注意这里是文件夹的名字非index.theme中的name）
+
+字体、GTK主题等随意修改。
