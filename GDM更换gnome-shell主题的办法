@@ -1,0 +1,17 @@
+需要安装glib-compile-resources：
+Debian:
+sudo apt install libglib2.0-dev
+
+因为各种原因可能会导致错误，所以先备份：
+sudo cp -av /usr/share/gnome-shell/gnome-shell-theme.gresource{,~}
+
+依次：
+GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'//g")
+cd /usr/share/themes/${GTK_THEME}/gnome-shell
+sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
+
+---
+
+卸载：
+
+恢复备份：sudo mv -v /usr/share/gnome-shell/gnome-shell-theme.gresource{~,}
