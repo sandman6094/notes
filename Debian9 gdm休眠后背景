@@ -1,0 +1,5 @@
+在Debian9中，如果在未登录gnome的情况下在gdm界面下休眠，那么你设置的背景图片将变成默认的Debian壁纸。
+
+解决方法是替换图片：
+/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/
+目录下的所有文件，如果使用纯色背景，分辨率可忽略不计（格式为.svg）
