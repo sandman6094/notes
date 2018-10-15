@@ -1,0 +1,20 @@
+新建 /etc/systemd/system/powertop.service 内容（不含 = ）：
+
+==========================================
+[Unit]
+Description=PowerTOP auto tune
+
+[Service]
+Type=idle
+Environment="TERM=dumb"
+ExecStart=/usr/sbin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
+==========================================
+
+
+后运行：
+systemctl daemon-reload
+systemctl enable powertop.service
+
