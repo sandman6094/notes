@@ -1,0 +1,3 @@
+关掉bluetooth.service即可。
+
+sudo systemctl disable bluetooth.service
