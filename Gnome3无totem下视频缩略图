@@ -1,0 +1,3 @@
+最近转了fedora29，可以安心的把totem卸载换mpv咯！
+
+sudo dnf install ffmpegthumbnailer
