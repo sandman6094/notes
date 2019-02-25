@@ -1,11 +1,8 @@
-编辑/etc/profile,在里面加入
+使用Bash编辑/etc/profile,在里面加入
+如果使用zsh，请编辑~/.zprofile
 
 export XIM_PROGRAM=fcitx
-
 export XIM=fcitx
-
 export GTK_IM_MODULE=fcitx
-
 export QT_IM_MODULE=fcitx
-
 export XMODIFIERS="@im=fcitx"
