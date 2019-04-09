@@ -1,0 +1,5 @@
+/etc/systemd/logind.conf
+
+增加：
+
+HandlePowerKey=ignore
