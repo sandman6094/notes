@@ -1,5 +1,4 @@
-使用Bash编辑/etc/profile,在里面加入
-如果使用zsh，请编辑~/.zprofile
+新建或者增加 ~/.xseesion 以下内容
 
 export XIM_PROGRAM=fcitx
 export XIM=fcitx
